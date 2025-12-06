@@ -61,7 +61,7 @@ export const stkPush = async (req, res) => {
                         heading: "Payment successful"
                     });
                 } else{
-                    res.render("dashboard", {
+                    res.render("failed", {
                         type: "failed",
                         heading: "Payment failed",
                         desc: `${resultdesc}.Please try again later`
